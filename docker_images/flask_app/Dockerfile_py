@@ -1,0 +1,11 @@
+FROM baseimage 
+
+WORKDIR /the/workdir/path
+
+COPY requirements.txt .
+
+RUN command
+
+COPY source dest
+
+CMD [ "executable" ]

@@ -1,0 +1,14 @@
+---
+- name: CIS Hardening for AWS Linux
+  hosts: localhost
+  connection: localhost
+  become: yes
+  tasks:
+    - name: SSH root login disabled
+      ansible.builtin.lineinfile:
+        path: /etc/shh/sshd_config
+        regexp: '^#?PermitRootlogin'
+        line: 'PermitRootLogin no'
+        state: present
+    - name
+    - name

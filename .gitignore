@@ -9,3 +9,4 @@ prod.tfvars
 .env
 *.pyc
 __pycache__/
+settings.json

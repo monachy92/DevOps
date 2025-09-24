@@ -1,0 +1,14 @@
+SHOW DATABASES;
+USE my_application_db;
+
+DROP TABLE IF EXISTS employees;
+
+CREATE TABLE employees (
+    ID TINYINT UNSIGNED PRIMARY KEY AUTO_INCREMENT, 
+    NAME VARCHAR(50),
+    BirthDate DATE,
+    Salary INT NOT NULL 
+);
+
+
+SHOW TABLES;
